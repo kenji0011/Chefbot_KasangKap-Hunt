@@ -1,5 +1,3 @@
-# Chefbot_KasangKap-Hunt
-
 # 🧑‍🍳 KaSangkap-Hunt: The Filipino Chefbot
 
 **KaSangkap-Hunt** is a specialized conversational AI fine-tuned to be an expert in Filipino cuisine. Built on the **Mistral-7B** architecture using **Unsloth**, this chatbot can generate authentic recipes, suggest ingredient substitutions, and guide users through cooking techniques with a cultural context.
@@ -95,3 +93,17 @@ Chefbot_KasangKap-Hunt/
 │   └── Project_Documentation.docx # Full documentation and reports
 ├── Chefbot_V3.ipynb              # The main Jupyter notebook (Training + Inference)
 └── README.md                     # Project overview (this file)
+```
+
+
+**Training Details**
+The model underwent iterative training to improve performance:
+Initial Training (1200 Steps): Established basic recipe knowledge.
+Evaluation: Identified weaknesses in substitution logic (e.g., hallucinating placeholders).
+Data Refinement: The data generation script was updated to provide explicit, high-quality substitution examples.
+Final Training (3400 Steps): Retrained on the improved dataset, resulting in a highly capable model with low evaluation loss.
+
+**Future Improvements**
+Expand Dataset: Incorporate more regional dishes (e.g., Ilocano, Bicolano specific recipes).
+Web Search Integration: Connect the bot to the internet to fetch real-time pricing or availability of ingredients.
+Image Recognition: Allow users to upload a picture of ingredients, and the bot suggests a recipe.
